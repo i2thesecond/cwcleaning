@@ -1,0 +1,11 @@
+// Override default variables before the import
+
+$primary: #6391d5;
+
+// Custome classes here
+.hero-image-negative-margin {
+	margin-bottom: -1rem;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
