@@ -12,9 +12,8 @@ import ImageAfter3 from '../img/beforeafter/after3.jpg';
 function Examples() {
 
   return (
-
 	<div className = "text-white bg-primary">
-	<Container className="pb-5 pt-5 mt-5 mb-5">
+	<Container id="examples" className="pb-5 pt-5 mt-5 mb-5">
 		<Row>
 			<Col>
 				<h1 className = "display-5 fw-bold text-center">Cleaning Examples</h1>
