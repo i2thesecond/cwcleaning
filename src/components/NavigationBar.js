@@ -11,7 +11,8 @@ function NavigationBar() {
 		  <Nav>
 			<Nav.Link href="#Services">Services</Nav.Link>
 			<Nav.Link href="#Examples">Examples</Nav.Link>
-			<Nav.Link href="#Contact">Contact</Nav.Link>
+			<Nav.Link href="#About">About</Nav.Link>
+			<Nav.Link href="#About">Contact</Nav.Link>
 		  </Nav>
 		</Navbar.Collapse>
 	  </Container>
