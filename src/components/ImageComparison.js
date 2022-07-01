@@ -1,4 +1,4 @@
-import { ComparisonSlider } from 'react-comparison-slider';
+import { ComparisonSlider, onlyHandleDraggable, BiMoveHorizontal } from 'react-comparison-slider';
 
 
 export const ImageComparison = ({beforeImage , afterImage}) => {
@@ -21,6 +21,8 @@ export const ImageComparison = ({beforeImage , afterImage}) => {
           />
         }
         aspectRatio={1 / 1}
+        onlyHandleDraggable
+        
       />
       
     </div>

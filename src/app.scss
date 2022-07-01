@@ -1,8 +1,18 @@
+
+
+@import './bootswatch.scss';
+@import './variables.scss';
+
 // Override default variables before the import
 
-$primary: #6391d5;
-$secondary : #3a3e59;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
+$mainBlue: #6391d5;
+$secondaryBlue : #3a3e59;
+
+.bg-hero{
+    background-color:$mainBlue;
+}
 
 // Custome classes here
 .hero-image-negative-margin {
@@ -11,6 +21,14 @@ $secondary : #3a3e59;
 
 .container-services-shadow {
 	box-shadow: 0.5rem -0.5rem #3b68aa;
+}
+
+.bg-mainBlue{
+    background-color: $mainBlue;
+}
+
+.border-mainBlue{
+    border-color: $mainBlue;
 }
 
 
@@ -23,7 +41,26 @@ i.bi {
 }
 
 
+.link-body-style{
+    font-size:1.4rem;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: black;
+        background-color:rgb(180, 180, 180);
+    }
 
+}
+
+.contact-style{
+    font-size:1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-hover:hover{
+    cursor: pointer;
+}
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
@@ -34,7 +71,7 @@ html {
 
 @include media-breakpoint-up(sm) {
     html {
-        font-size: 1.0rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -48,10 +85,109 @@ html {
     html {
         font-size: 1.2rem;
     }
+}
 
-    @include media-breakpoint-up(xl) {
-        html {
-            font-size: 1.2rem;
-        }
+@include media-breakpoint-up(xl) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+
+.about-paragraph-style{
+    font-size: 1.1rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.2rem;
+    }
+}
+
+
+.btn-outline {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 1.0rem;
+}
+
+.btn-outline:hover {
+  background-color: $primary;
+  border-color: $primary;
+  color: white;
+}
+
+.modal-header{
+    background-color: #224881;
+    color: $white;
+}
+
+.modal-footer{
+    background-color: $gray-300;
+    color: $white;
+}
+
+
+.tagline{
+    font-size: 1.8rem;
+    @include media-breakpoint-up(md) {
+        font-size:2.8rem;
+    }
+    //margin: 0 auto;
+    padding: 10px 20px;
+    line-height: 2.0;
+    text-align: center;
+    color: $black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quotation{
+  font-size: 1.8rem;
+  @include media-breakpoint-up(md) {
+      font-size:2.8rem;
+  }
+  //margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 2.0;
+  text-align: center;
+  color: $black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: $secondaryBlue;
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: $secondaryBlue;
+  font-size: 3em;
+}
+footer{
+  margin:0;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.services-list{
+    font-size: 1.3rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
     }
 }

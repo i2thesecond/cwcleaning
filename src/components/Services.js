@@ -1,13 +1,26 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, CardGroup } from 'react-bootstrap';
+
 import imgRightBottom from '../img/img-right-bottom.jpg';
 import imgRightTop from '../img/img-right-top.jpg';
 import imgLeft from '../img/img-left.jpg';
 
+
 function Services() {
   return (
   <Container id="services" className="pt-5 pb-5 mt-5 mb-5">
-    <div className="row align-items-center">
+
+
+    <div className="row pb-5 mb-5">
+        <div className="col">
+            <blockquote>
+                <p class="quotation">Our Mission is to make your life easier with the best cleaning services avaliable.</p>
+                <footer>— Curtis Wiley, Owner</footer>
+            </blockquote> 
+        </div>
+    </div>
+
+    <div className="row align-items-center mb-5">
         <div className="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
             <div className="row align-items-center">
                 <div className="col-lg-6 col-md-6 col-6">
@@ -43,14 +56,10 @@ function Services() {
 
         <div className="col-lg-6 col-md-6 col-12 order-1 order-md-2">
             <div className="section-title ml-lg-5">
-                <div className = "card text-white bg-primary border-primary container-services-shadow">
+                <div className = "card text-white container-services-shadow bg-info">
                 <div className='card-body'>
-                    <h3 className="title mb-4">
-                        <u>Our mission is to make your life easier.</u>
-                   </h3>
-                    <h1 className="text-custom font-weight-normal mb-3">Our Services</h1>
-			    	<h4>We offer the following:</h4>
-			    	<ul>
+                    <h1 className="text-custom font-weight-normal mb-3">We offer the following:</h1>
+			    	<ul className='services-list'>
 			    		<li>Carpet Cleaning</li>
 			    		<li>Upholstery Cleaning</li>
 			    		<li>Hard Floor Cleaning</li>
@@ -64,6 +73,7 @@ function Services() {
             </div>
         </div>
     </div>
+
     </Container>
   );
 }

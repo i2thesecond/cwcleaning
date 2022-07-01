@@ -9,16 +9,17 @@ import ImageAfter2 from '../img/beforeafter/after2.jpg';
 import ImageBefore3 from '../img/beforeafter/before3.jpg'; 
 import ImageAfter3 from '../img/beforeafter/after3.jpg';
 
+
 function Examples() {
 
   return (
-	<div className = "text-white bg-primary">
+	<div className = "text-white bg-info">
 	<Container id="examples" className="pb-5 pt-5 mt-5 mb-5">
 		<Row>
 			<Col>
 				<h1 className = "display-5 fw-bold text-center">Cleaning Examples</h1>
-				<p className = "text-center">Slide on the image to view before and after photos of our work.</p>		
-				<h3 className = "text-center">Whether it is deepstains or a deepclean, C.W. Clean N Go has you covered!</h3>		
+				<h4 className = "text-center">Slide on the image to view before and after photos of our work.</h4>		
+				<h3 className = "text-center mb-2">Whether it is deepstains or a deepclean, C.W. Clean N Go has you covered!</h3>		
 			</Col>
 		</Row>
 		<Row>
